@@ -1,0 +1,30 @@
+{
+	"name": "Dev container for 3D Mapping",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "extrinsic_calibration",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.automationShell.linux": "/bin/bash",
+				"python.formatting.provider": "black",
+				"python.formatting.blackPath": "/usr/local/bin/black"
+			},
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"ms-iot.vscode-ros",
+				"eamodio.gitlens",
+				"streetsidesoftware.code-spell-checker",
+				"oderwat.indent-rainbow",
+				"pkief.material-icon-theme",
+				"uloco.theme-bluloco-dark",
+				"ms-python.python",
+				"ms-vscode.cpptools",
+				"xaver.clang-format",
+				"2gua.rainbow-brackets",
+				"njpwerner.autodocstring",
+				"twxs.cmake"
+			]
+		}
+	}
+}
