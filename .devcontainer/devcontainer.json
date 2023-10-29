@@ -1,18 +1,18 @@
 {
-	"name": "Dev container for 3D Mapping",
+	"name": "Extrinsic Calibration",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "extrinsic_calibration",
-	"workspaceFolder": "/workspace",
+	"workspaceFolder": "/ros_ws/src/",
+	"postCreateCommand": "chmod +x .devcontainer/post-create-command.sh && .devcontainer/post-create-command.sh",
 	"customizations": {
 		"vscode": {
 			"settings": {
 				"terminal.integrated.automationShell.linux": "/bin/bash",
-				"python.formatting.provider": "black",
-				"python.formatting.blackPath": "/usr/local/bin/black"
+				"terminal.integrated.cwd": "${containerWorkspaceFolder}"
 			},
 			"extensions": [
 				"ms-azuretools.vscode-docker",
-				"ms-iot.vscode-ros",
+				"althack.ament-task-provider",
 				"eamodio.gitlens",
 				"streetsidesoftware.code-spell-checker",
 				"oderwat.indent-rainbow",
@@ -21,8 +21,8 @@
 				"ms-python.python",
 				"ms-vscode.cpptools",
 				"xaver.clang-format",
-				"2gua.rainbow-brackets",
 				"njpwerner.autodocstring",
+				"ms-iot.vscode-ros",
 				"twxs.cmake"
 			]
 		}

@@ -26,7 +26,9 @@ RUN apt-get update && apt-get install -y git-core bash-completion curl \
 # install gazebo
 RUN apt update && apt install --no-install-recommends -y \ 
   ros-${ROS_DISTRO}-gazebo-ros \
-  ros-${ROS_DISTRO}-gazebo-ros-pkgs
+  ros-${ROS_DISTRO}-gazebo-ros-pkgs \
+  ros-${ROS_DISTRO}-ament-lint
+
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=
