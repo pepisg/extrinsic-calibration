@@ -21,6 +21,7 @@
 				"ms-python.python",
 				"ms-vscode.cpptools",
 				"xaver.clang-format",
+				"redhat.vscode-xml",
 				"njpwerner.autodocstring",
 				"ms-iot.vscode-ros",
 				"twxs.cmake"

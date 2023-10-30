@@ -1,0 +1,37 @@
+apriltags:
+  - id: Apriltag36_11_00000
+    pose:
+      x: 1.0
+      y: 1.0
+      z: 0.5
+      yaw: 0.78
+      pitch: 0.0
+      roll: 0.0
+  - id: Apriltag36_11_00001
+    pose:
+      x: 1.0
+      y: 0.0
+      z: 0.5
+      yaw: 0.0
+      pitch: 0.0
+      roll: 0.0
+
+cameras:
+  - id: front
+    type: fisheye
+    pose:
+      x: 0.3
+      y: 0.0
+      z: 0.3
+      yaw: 0.0
+      pitch: 0.0
+      roll: 0.0
+  - id: left
+    type: fisheye
+    pose:
+      x: 0.3
+      y: 0.3
+      z: 0.3
+      yaw: 1.57
+      pitch: 0.0
+      roll: 0.0

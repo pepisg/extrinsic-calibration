@@ -29,6 +29,10 @@ RUN apt update && apt install --no-install-recommends -y \
   ros-${ROS_DISTRO}-gazebo-ros-pkgs \
   ros-${ROS_DISTRO}-ament-lint
 
+# python dependencies
+RUN apt-get update && apt-get install -y python3-pip \
+  && pip install transforms3d
+
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=
